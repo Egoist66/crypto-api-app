@@ -1,0 +1,53 @@
+{
+  "cryptocurrencies": [
+    {
+      "id": "bitcoin",
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "basePrice": 43250.75,
+      "volatility": 0.02
+    },
+    {
+      "id": "ethereum",
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "basePrice": 2580.30,
+      "volatility": 0.025
+    },
+    {
+      "id": "binancecoin",
+      "name": "Binance Coin",
+      "symbol": "BNB",
+      "basePrice": 315.25,
+      "volatility": 0.018
+    },
+    {
+      "id": "cardano",
+      "name": "Cardano",
+      "symbol": "ADA",
+      "basePrice": 0.52,
+      "volatility": 0.03
+    },
+    {
+      "id": "solana",
+      "name": "Solana",
+      "symbol": "SOL",
+      "basePrice": 98.75,
+      "volatility": 0.028
+    },
+    {
+      "id": "ripple",
+      "name": "Ripple",
+      "symbol": "XRP",
+      "basePrice": 0.58,
+      "volatility": 0.035
+    },
+    {
+      "id": "dogecoin",
+      "name": "Dogecoin",
+      "symbol": "DOGE",
+      "basePrice": 0.083,
+      "volatility": 0.04
+    }
+  ]
+}
