@@ -7,9 +7,10 @@ import { cacheMiddleware } from './middleware/cache';
 
 const app = express();
 
-// Middleware
 app.use(helmet());
-app.use(cors());
+app.use(cors({
+  origin: config.allowedOrigins
+}));
 app.use(express.json());
 
 // Health check
@@ -21,13 +22,9 @@ app.get('/health', (req, res) => {
   });
 });
 
-// Get all cryptocurrencies with dynamic prices
 app.get('/cryptos', cacheMiddleware, PriceController.getAllCryptos);
-
-// Get specific cryptocurrency price
 app.get('/price/:id', cacheMiddleware, PriceController.getPrice);
 
-// 404 handler - исправляем проблему с wildcard
 app.use((req, res) => {
   res.status(404).json({
     success: false,
@@ -35,7 +32,6 @@ app.use((req, res) => {
   });
 });
 
-// Error handler
 app.use((error: any, req: express.Request, res: express.Response, next: express.NextFunction) => {
   console.error('Unhandled error:', error);
   res.status(500).json({
