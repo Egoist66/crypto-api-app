@@ -1,9 +1,7 @@
-import { readFileSync } from 'fs';
-import { join } from 'path';
 import { CryptoPrice, CryptocurrenciesData, ApiResponse } from '../types';
 import { setCache } from '../middleware/cache';
 
-
+import cryptocurrenciesData from '../data/cryptocurrencies.json';
 
 /**
  * Service for generating dynamic cryptocurrency prices.
@@ -20,11 +18,10 @@ export class CryptoService {
   private previousPrices: Map<string, number>;
 
   constructor() {
-    const dataPath = join(__dirname, '../data/cryptocurrencies.json');
-    const rawData = readFileSync(dataPath, 'utf-8');
+    
 
 
-    this.cryptoData = JSON.parse(rawData);
+    this.cryptoData = cryptocurrenciesData;
     this.previousPrices = new Map();
     this.initializePrices();
   }

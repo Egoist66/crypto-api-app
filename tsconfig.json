@@ -15,7 +15,9 @@
     "removeComments": true
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "src/data/cryptocurrencies.json"
+
   ],
   "exclude": [
     "node_modules",
