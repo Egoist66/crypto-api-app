@@ -1,17 +1,25 @@
+import 'dotenv/config';
+
 import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 import { PriceController } from './controllers/priceController';
 import { cacheMiddleware } from './middleware/cache';
+import { config } from './config';
 
 const app = express();
 
+
+
 app.use(helmet());
-app.use(cors());
+app.use(cors({
+  origin: config.allowedOrigins
+}));
 app.use(express.json());
 
 // Health check
 app.get('/health', (req, res) => {
+
   res.json({ 
     status: 'OK', 
     timestamp: new Date().toISOString(),
