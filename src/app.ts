@@ -5,18 +5,15 @@ import cors from 'cors';
 import helmet from 'helmet';
 import { PriceController } from './controllers/priceController';
 import { cacheMiddleware } from './middleware/cache';
-import { config } from './config';
+import { corsOptions } from './config';
 
 const app = express();
 
 
 
 app.use(helmet());
-app.use(cors({
-  origin: config.allowedOrigins,
-  credentials: false,
-  
-}));
+app.options('*', cors(corsOptions));
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // Health check
