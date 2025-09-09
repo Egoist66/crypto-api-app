@@ -9,7 +9,7 @@ const app = express();
 
 app.use(helmet());
 app.use(cors({
-  origin: config.allowedOrigins
+  origin: config.allowedOrigins,
 }));
 app.use(express.json());
 
