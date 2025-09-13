@@ -4,50 +4,64 @@
       "id": "bitcoin",
       "name": "Bitcoin",
       "symbol": "BTC",
+      "fullName": "Bitcoin (BTC)",
       "basePrice": 43250.75,
-      "volatility": 0.02
+      "volatility": 0.02,
+      "icon": "https://img.icons8.com/color/48/bitcoin"
     },
     {
       "id": "ethereum",
       "name": "Ethereum",
+      "fullName": "Ethereum (ETH)",
       "symbol": "ETH",
       "basePrice": 2580.30,
-      "volatility": 0.025
+      "volatility": 0.025,
+      "icon": "https://img.icons8.com/3d-fluency/94/ethereum.png"
     },
     {
       "id": "binancecoin",
       "name": "Binance Coin",
+      "fullName": "Binance Coin (BNB)",
       "symbol": "BNB",
       "basePrice": 315.25,
-      "volatility": 0.018
+      "volatility": 0.018,
+      "icon": "https://img.icons8.com/?size=200&id=QjVzKsYM8Geu&format=png"
     },
     {
       "id": "cardano",
       "name": "Cardano",
+      "fullName": "Cardano (ADA)",
       "symbol": "ADA",
       "basePrice": 0.52,
-      "volatility": 0.03
+      "volatility": 0.03,
+      "icon": "https://img.icons8.com/ios/50/cardano.png"
     },
     {
       "id": "solana",
       "name": "Solana",
+      "fullName": "Solana (SOL)",
       "symbol": "SOL",
       "basePrice": 98.75,
-      "volatility": 0.028
+      "volatility": 0.028,
+      "icon": "https://img.icons8.com/nolan/64/solana.png"
     },
     {
       "id": "ripple",
       "name": "Ripple",
+      "fullName": "Ripple (XRP)",
       "symbol": "XRP",
       "basePrice": 0.58,
-      "volatility": 0.035
+      "volatility": 0.035,
+      "icon": "https://img.icons8.com/ios/50/ripple.png"
     },
     {
       "id": "dogecoin",
       "name": "Dogecoin",
+      "fullName": "Dogecoin (DOGE)",
       "symbol": "DOGE",
       "basePrice": 0.083,
-      "volatility": 0.04
+      "volatility": 0.04,
+      "icons": "https://img.icons8.com/ios/50/dogecoin.png"
     }
   ]
 }
