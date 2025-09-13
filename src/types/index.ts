@@ -4,6 +4,8 @@ export interface CryptoData {
   symbol: string;
   basePrice: number;
   volatility: number;
+  icon: string;
+  fullName: string;
 }
 
 export interface CryptoPrice {
@@ -14,6 +16,9 @@ export interface CryptoPrice {
   priceChange: number;
   priceChangePercent: number;
   lastUpdated: string;
+  icon: string;
+  fullName: string;
+  
 }
 
 export interface CryptocurrenciesData {

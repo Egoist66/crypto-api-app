@@ -77,7 +77,9 @@ export class CryptoService {
         price: currentPrice,
         priceChange: change,
         priceChangePercent: changePercent,
-        lastUpdated: new Date().toISOString()
+        lastUpdated: new Date().toISOString(),
+        icon: cryptoData.icon,
+        fullName: cryptoData.fullName
       };
 
       setCache(`crypto_${id}`, { success: true, data: cryptoPrice });
@@ -114,7 +116,9 @@ export class CryptoService {
           price: currentPrice,
           priceChange: change,
           priceChangePercent: changePercent,
-          lastUpdated: new Date().toISOString()
+          lastUpdated: new Date().toISOString(),
+          icon: cryptoData.icon,
+          fullName: cryptoData.fullName
         });
       }
 

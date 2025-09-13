@@ -61,7 +61,7 @@
       "symbol": "DOGE",
       "basePrice": 0.083,
       "volatility": 0.04,
-      "icons": "https://img.icons8.com/ios/50/dogecoin.png"
+      "icon": "https://img.icons8.com/ios/50/dogecoin.png"
     }
   ]
 }
